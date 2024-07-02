@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.css'; // Import the CSS file for styling
+import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +10,16 @@ const Navbar = () => {
   };
 
   return (
+   /* <nav>
+    <NavLink to='/'  style={navLinkStyles}>Home</NavLink>
+    <NavLink to='/Ani' style={navLinkStyles}>Ani</NavLink>
+    <NavLink to='/Aay' style={navLinkStyles}>Aay</NavLink>
+    <NavLink to='/CustomerForm' >Customer</NavLink>
+
+  </nav> */
     <nav className="navbar">
+      
+
       <div className="navbar-container">
         <a className="navbar-brand" href="#">Call Logging System</a>
         <button className="navbar-toggler" onClick={toggleMenu}>
