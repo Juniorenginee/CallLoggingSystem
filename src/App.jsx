@@ -11,10 +11,10 @@ function App() {
     <>
       <Navbar />
       <Routes>
-        <Route path="/" element={<CustomerTable />} />
+        <Route path="/" element={<CustomerForm />} />
+        <Route path="/CustomerTable" element={<CustomerTable />} />
         <Route path="/MoTable" element={<MoTable />} />
         <Route path="/ManagerTable" element={<ManagerTable />} />
-        <Route path="/CustomerForm" element={<CustomerForm />} />
       </Routes>
     </>
   );

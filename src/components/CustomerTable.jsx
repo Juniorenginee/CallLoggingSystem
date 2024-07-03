@@ -4,18 +4,11 @@ import "./CustomerTable.css";
 const CustomerTable = () => {
   return (
     <>
-      <h1
-        style={{
-          textAlign: "center",
-          fontWeight: "bold",
-          backgroundColor: "#455a64",
-          padding: "10px",
-          width: "141%",
-        }}
-      >
+      <h1 className="w-full bg-[#455a64] py-4 font-bold text-center">
         Customer Table
       </h1>
-      <table className="customer-table">
+      <div className="customer-table overflow-x-scroll w-[100%]">
+      <table>
         <thead>
           <tr>
             <th>Customer Code</th>
@@ -87,6 +80,7 @@ const CustomerTable = () => {
           </tr>
         </tbody>
       </table>
+      </div>
       <div style={{ marginTop: "20px" }}>
         <label htmlFor="comment">Manager's Comment:</label>
         <textarea

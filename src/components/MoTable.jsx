@@ -4,15 +4,7 @@ import "./MoTable.css";
 const MoTable = () => {
   return (
     <>
-      <h1
-        style={{
-          textAlign: "center",
-          fontWeight: "bold",
-          backgroundColor: "#455a64",
-          padding: "10px",
-          width: "141%",
-        }}
-      >
+      <h1 className="bg-[#455a64] py-2 font-bold text-center">
         Mo Table
       </h1>
       <table className="customer-table">

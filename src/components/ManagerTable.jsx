@@ -4,49 +4,41 @@ import "./ManagerTable.css";
 const ManagerTable = () => {
   return (
     <>
-      <h1
-        style={{
-          textAlign: "center",
-          fontWeight: "bold",
-          backgroundColor: "#455a64",
-          padding: "10px",
-          width: "141%",
-        }}
-      >
-        Manager Table
-      </h1>
-      <table className="customer-table">
-        <thead>
-          <tr>
-            <th>Customer Code</th>
-            <th>Customer Name</th>
-            <th>Contact Info</th>
-            <th>Problem Description</th>
-            <th>Module Name</th>
-            <th>Comment</th>
-            <th>MANAGER Decision</th>
-            <th>M Decision date</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>
-              <select>
-                <option value="Pending">Pending</option>
-                <option value="Accept">Accept</option>
-                <option value="Reject">Reject</option>
-              </select>
-            </td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
+      <h1 className="bg-[#455a64] py-4 font-bold text-center">Manager Table</h1>
+      <div>
+        <table className="customer-table">
+          <thead>
+            <tr>
+              <th>Customer Code</th>
+              <th>Customer Name</th>
+              <th>Contact Info</th>
+              <th>Problem Description</th>
+              <th>Module Name</th>
+              <th>Comment</th>
+              <th>MANAGER Decision</th>
+              <th>M Decision date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>
+                <select>
+                  <option value="Pending">Pending</option>
+                  <option value="Accept">Accept</option>
+                  <option value="Reject">Reject</option>
+                </select>
+              </td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
       <div style={{ marginTop: "20px" }}>
         <label htmlFor="comment">Manager's Comment:</label>
         <textarea

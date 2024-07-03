@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Navbar.css"; // Import the CSS file for styling
 import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,32 +28,47 @@ const Navbar = () => {
         </button>
         <div className={`navbar-menu ${isOpen ? "open" : ""}`}>
           <ul className="navbar-nav">
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Home
-              </a>
+          <li className="nav-item">
+              <Link to="/"><a className="nav-link" href="#">
+              Home
+              </a></Link>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
                 Link
               </a>
             </li>
-            <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="#">
-                User
+            
+            <li className="nav-item">
+              <Link to="/ManagerTable"><a className="nav-link" href="#">
+              Manager
+              </a></Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/MoTable">
+              <a className="nav-link" href="#">
+              Module Owner
               </a>
-              <ul className="dropdown-menu">
-                <li>
+              </Link>
+            </li>
+            <li className="nav-item">
+             <Link to="/CustomerTable"> <a className="nav-link" href="#">
+              Hemant Sir
+              </a></Link>
+            </li>
+
+            
+                {/* <li className="nav-item">
                   <a className="dropdown-item" href="#">
                     Customer
                   </a>
                 </li>
-                <li>
+                <li className="nav-item">
                   <a className="dropdown-item" href="#">
                     Manager
                   </a>
                 </li>
-                <li>
+                <li className="nav-item">
                   <a className="dropdown-item" href="#">
                     Module Owner
                   </a>
@@ -64,26 +80,27 @@ const Navbar = () => {
                   <a className="dropdown-item" href="#">
                     Hemant Sir
                   </a>
-                </li>
-              </ul>
+                </li> */}
+
+
+
+
+            {/* <li className="nav-item dropdown">
+              <a className="nav-link dropdown-toggle" href="#">
+                User
+              </a>
+              
             </li>
             <li className="nav-item">
               <a className="nav-link disabled" href="#">
                 Disabled
               </a>
-            </li>
+            </li> */}
+
+
+
           </ul>
-          <form className="d-flex" role="search">
-            <input
-              className="form-control"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button className="btn" type="submit">
-              Search
-            </button>
-          </form>
+         
         </div>
       </div>
     </nav>
